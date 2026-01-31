@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>CNCPrime | Em breve</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* RESET BÁSICO */
+*{
+  box-sizing:border-box;
+}
+
+/* BODY */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f6f8;
+  color:#222;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  text-align:center;
+  position:relative;
+}
+
+/* LOGO COMO FUNDO (WATERMARK) */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:url("images/logo-cncprime.png");
+  background-repeat:repeat;
+  background-size:420px;
+  opacity:0.035;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* CARD CENTRAL */
+.box{
+  background:#ffffff;
+  padding:42px 34px;
+  border-radius:18px;
+  max-width:560px;
+  width:100%;
+  box-shadow:0 12px 35px rgba(0,0,0,.12);
+  position:relative;
+  z-index:1;
+}
+
+/* LOGO */
+.box img{
+  height:130px;          /* LOGO MAIOR */
+  max-width:100%;
+  margin-bottom:26px;
+}
+
+/* TÍTULO */
+.box h1{
+  margin:0;
+  font-size:26px;
+  font-weight:700;
+}
+
+/* TEXTO */
+.box p{
+  margin:14px 0;
+  color:#555;
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp{
+  display:inline-block;
+  margin-top:26px;
+  padding:14px 26px;
+  background:#25d366;
+  color:#ffffff;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:15px;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.whatsapp:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+/* RODAPÉ */
+small{
+  display:block;
+  margin-top:26px;
+  color:#777;
+  font-size:13px;
+}
+
+/* RESPONSIVO */
+@media (max-width:480px){
+  .box{
+    padding:34px 22px;
+  }
+  .box img{
+    height:95px;
+  }
+  .box h1{
+    font-size:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+  <img src="images/logo-cncprime.png" alt="CNCPrime">
+
+  <h1>Estamos preparando algo especial</h1>
+
+  <p>
+    O novo catálogo técnico da <strong>CNCPrime</strong> está em fase final de
+    ajustes e validações.
+  </p>
+
+  <p>
+    Em breve, você terá acesso aos nossos produtos e soluções em CNC
+    com mais detalhes, organização e agilidade.
+  </p>
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/5516997736797?text=Olá! Gostaria de informações sobre produtos e soluções CNC."
+    target="_blank">
+    Falar com a CNCPrime
+  </a>
+
+  <small>© CNCPrime • cncprime.com.br</small>
+
+</div>
+
+</body>
+</html>
