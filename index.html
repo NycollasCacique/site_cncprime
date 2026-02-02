@@ -2,8 +2,27 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>CNCPrime | Catálogo Técnico</title>
+<title>CNCPrime | Catálogo Técnico B2B</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Catálogo técnico B2B da CNCPrime com produtos e soluções CNC. Pesquise por código, modelo, marca e descrição. Atendimento via WhatsApp.">
+<link rel="canonical" href="https://cncprime.com.br/">
+
+<meta property="og:site_name" content="CNCPrime">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CNCPrime | Catálogo Técnico B2B">
+<meta property="og:description" content="Catálogo técnico B2B da CNCPrime com busca por código, marca, modelo e descrição. Atendimento via WhatsApp.">
+<meta property="og:url" content="https://cncprime.com.br/">
+<meta property="og:image" content="https://cncprime.com.br/images/logo-cncprime.png">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMHTY8X8T6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FMHTY8X8T6');
+</script>
 
 <style>
 body{
@@ -13,15 +32,14 @@ body{
   color:#222;
 }
 
-/* LOGO COMO FUNDO EXPANDIDO */
+/* LOGO COMO FUNDO */
 body::before{
   content:"";
   position:fixed;
   inset:0;
-  background-image:url("./images/logo-cncprime.png");
-  background-repeat:repeat;
-  background-size:380px;
-  opacity:0.035;
+  background:url("images/logo-cncprime.png") repeat center;
+  background-size:420px;
+  opacity:0.03;
   pointer-events:none;
   z-index:0;
 }
@@ -34,6 +52,7 @@ body::before{
   z-index:1;
 }
 
+/* HEADER */
 header{
   display:flex;
   align-items:center;
@@ -45,6 +64,7 @@ header{
 
 header img{height:48px}
 
+/* BUSCA */
 .search{margin:20px 0}
 .search input{
   width:100%;
@@ -52,6 +72,7 @@ header img{height:48px}
   font-size:16px;
 }
 
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
@@ -72,9 +93,7 @@ header img{height:48px}
 }
 
 .card .info{padding:15px}
-
 .card h3{margin:0}
-
 .card p{font-size:14px;color:#555}
 
 .btn{
@@ -88,6 +107,56 @@ header img{height:48px}
   border-radius:8px;
   text-decoration:none;
 }
+
+/* RODAPÉ */
+.rodape{
+  background:#fff;
+  margin-top:40px;
+  padding:30px 20px 15px;
+  border-top:1px solid #e0e0e0;
+}
+
+.rodape-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+.rodape-col img{
+  height:48px;
+  margin-bottom:10px;
+}
+
+.rodape-col h4{
+  margin:0 0 10px;
+  font-size:15px;
+}
+
+.rodape-col p{
+  margin:0;
+  font-size:14px;
+  color:#555;
+  line-height:1.5;
+}
+
+.rodape-col a{
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.rodape-col a:hover{
+  text-decoration:underline;
+}
+
+.rodape-copy{
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  color:#777;
+}
 </style>
 </head>
 
@@ -95,22 +164,63 @@ header img{height:48px}
 <div class="container">
 
 <header>
-  <img src="./images/logo-cncprime.png">
+  <img src="images/logo-cncprime.png" alt="CNCPrime">
   <div>
     <h2>CNCPrime</h2>
-    <small>Catálogo Técnico • Soluções em CNC</small>
+    <small>Catálogo técnico • Soluções CNC</small>
   </div>
 </header>
 
 <div class="search">
-  <input id="busca" placeholder="Pesquisar por código, modelo, marca ou descrição técnica...">
+  <input id="busca" placeholder="Pesquisar por código, modelo, marca ou descrição...">
 </div>
 
 <div id="produtos" class="grid"></div>
 
 </div>
 
-<script src="./js/produtos.js"></script>
+<footer class="rodape">
+  <div class="rodape-container">
+
+    <div class="rodape-col">
+      <img src="images/logo-cncprime.png" alt="CNCPrime">
+      <p>
+        Catálogo técnico B2B especializado em soluções CNC,
+        peças e equipamentos industriais.
+      </p>
+    </div>
+
+    <div class="rodape-col">
+      <h4>Contato</h4>
+      <p>
+        Atendimento via WhatsApp<br>
+        <a href="https://wa.me/5516997094376" target="_blank" rel="noopener">
+          (16) 99709-4376
+        </a>
+      </p>
+      <p>
+        <a href="https://cncprime.com.br" target="_blank" rel="noopener">
+          cncprime.com.br
+        </a>
+      </p>
+    </div>
+
+    <div class="rodape-col">
+      <h4>Informações</h4>
+      <p>
+        Produtos sujeitos à disponibilidade de estoque.<br>
+        Imagens ilustrativas.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="rodape-copy">
+    © CNCPrime • Catálogo técnico • Todos os direitos reservados
+  </div>
+</footer>
+
+<script src="js/produtos.js"></script>
 <script>
 const lista = document.getElementById("produtos");
 const busca = document.getElementById("busca");
@@ -120,26 +230,34 @@ function render(dados){
   dados.forEach(p=>{
     lista.innerHTML+=`
       <div class="card">
-        <img src="${p.imagens[0]}" alt="${p.nome}">
+        <img src="${p.imagens[0]}" alt="${p.nome} ${p.modelo}">
         <div class="info">
           <h3>${p.nome}</h3>
           <p>${p.marca} • ${p.modelo}</p>
           <p><strong>${p.preco}</strong></p>
         </div>
-        <a class="btn" href="produto.html?id=${p.id}">Ver detalhes</a>
+        <a class="btn"
+           href="produto.html?id=${encodeURIComponent(p.id)}"
+           onclick="gtag('event','ver_produto',{produto:'${p.id}'})">
+           Ver detalhes
+        </a>
       </div>
     `;
   });
 }
 
-busca.addEventListener("input", ()=>{
+busca.addEventListener("input", () => {
   const termo = busca.value.toLowerCase();
+
   const filtrados = produtos.filter(p =>
-    p.nome.toLowerCase().includes(termo) ||
-    p.modelo.toLowerCase().includes(termo) ||
-    p.marca.toLowerCase().includes(termo) ||
-    p.descricao.toLowerCase().includes(termo)
+    (p.id || "").toLowerCase().includes(termo) ||
+    (p.codigo_next || "").toLowerCase().includes(termo) ||
+    (p.nome || "").toLowerCase().includes(termo) ||
+    (p.modelo || "").toLowerCase().includes(termo) ||
+    (p.marca || "").toLowerCase().includes(termo) ||
+    (p.descricao || "").toLowerCase().includes(termo)
   );
+
   render(filtrados);
 });
 
